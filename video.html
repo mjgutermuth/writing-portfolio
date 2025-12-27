@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Melinda Gutermuth - Video Portfolio">
+    <title>Video Portfolio - Melinda Gutermuth</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-card {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .video-thumbnail-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            border: 2px solid var(--border);
+            margin-bottom: 15px;
+        }
+
+        .video-thumbnail {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-play-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 20, 147, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover .video-play-overlay {
+            background: rgba(255, 20, 147, 1);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-play-overlay i {
+            color: white;
+            font-size: 32px;
+            margin-left: 5px;
+        }
+
+        .watch-button {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Consistent spacing fix */
+        .card-title {
+            min-height: 3.3em;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .card-text {
+            min-height: 4.5em;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container">
+                <div class="text-left">
+                    <h1 class="navbar-brand mb-0">melinda gutermuth</h1>
+                    <h6 class="tagline">technical writer & storyteller</h6>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                                <a class="dropdown-item" href="writing.html">Technical Writing</a>
+                                <a class="dropdown-item" href="video.html">Video</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="combined-portfolio" class="container-fluid my-5">
+        <div class="container">
+            <h2>Video Portfolio</h2>
+
+            <!-- API Education Section -->
+            <div class="work-section my-4">
+                <h3>API Education</h3>
+                <p>Educational content making API concepts accessible to developers:</p>
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-star"></i> Featured: "How to Automate API Tests with Agent Mode"
+                                </h5>
+                                <p class="card-text">Step-by-step guide to automating API testing workflows using Postman's Agent Mode.</p>
+                                <a href="https://www.youtube.com/watch?v=har-WJ8dxhY" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/har-WJ8dxhY/maxresdefault.jpg" alt="Automate API Tests video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Writing</span>
+                                    <span class="badge badge-primary">On-Camera Presenting</span>
+                                    <span class="badge badge-primary">Technical Education</span>
+                                    <span class="badge badge-primary">Screen Demo Creation</span>
+                                    <a href="https://www.youtube.com/watch?v=har-WJ8dxhY" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-book"></i> "What is an API?"
+                                </h5>
+                                <p class="card-text">An engaging introduction to APIs that reached over 1 million views, making complex concepts accessible to beginners.</p>
+                                <a href="https://www.youtube.com/watch?v=-0MmWEYR2a8" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/-0MmWEYR2a8/maxresdefault.jpg" alt="What is an API? video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Development</span>
+                                    <span class="badge badge-primary">On-Camera Presenting</span>
+                                    <span class="badge badge-primary">Technical Education</span>
+                                    <span class="badge badge-primary">Screen Demo Creation</span>
+                                    <a href="https://www.youtube.com/watch?v=-0MmWEYR2a8" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tutorial Section -->
+            <div class="work-section my-4">
+                <h3>Product Education & Tutorials</h3>
+                <p>Technical tutorials and how-to content for Postman users:</p>
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-code-branch"></i> "What is an Async API?"
+                                </h5>
+                                <p class="card-text">Real-world use cases and examples explaining asynchronous APIs and when to use them.</p>
+                                <a href="https://www.youtube.com/watch?v=5ubi8Dwokp0" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/5ubi8Dwokp0/maxresdefault.jpg" alt="What is an Async API? video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Writing</span>
+                                    <span class="badge badge-primary">On-Camera Presenting</span>
+                                    <a href="https://www.youtube.com/watch?v=5ubi8Dwokp0" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-project-diagram"></i> "Build Self-Verifying API Documentation"
+                                </h5>
+                                <p class="card-text">Learn to create executable, self-verifying API documentation using Postman Flows.</p>
+                                <a href="https://www.youtube.com/watch?v=V186qpoMrqA" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/V186qpoMrqA/maxresdefault.jpg" alt="Self-Verifying API Documentation video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Writing</span>
+                                    <span class="badge badge-primary">On-Camera Presenting</span>
+                                    <a href="https://www.youtube.com/watch?v=V186qpoMrqA" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-exchange-alt"></i> "Webhooks vs REST APIs"
+                                </h5>
+                                <p class="card-text">Compare webhooks and REST APIs to determine which approach is right for your project.</p>
+                                <a href="https://www.youtube.com/watch?v=NCQj2dBVUCQ" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/NCQj2dBVUCQ/maxresdefault.jpg" alt="Webhooks vs REST APIs video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Writing</span>
+                                    <span class="badge badge-primary">On-Camera Presenting</span>
+                                    <a href="https://www.youtube.com/watch?v=NCQj2dBVUCQ" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 of tutorials -->
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-desktop"></i> "Navigating the Postman App Interface"
+                                </h5>
+                                <p class="card-text">In-depth exploration of the Postman app UI, helping new users get oriented and productive quickly.</p>
+                                <a href="https://www.youtube.com/watch?v=Kr8OVXjzw4k" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/Kr8OVXjzw4k/maxresdefault.jpg" alt="Navigating Postman App video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Writing</span>
+                                    <span class="badge badge-primary">Narration</span>
+                                    <a href="https://www.youtube.com/watch?v=Kr8OVXjzw4k" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-check-square"></i> "Validate Response Data With JSON Schema"  
+                                </h5>
+                                <p class="card-text">Hands-on tutorial teaching developers how to use JSON Schema to validate API response data.</p>
+                                <a href="https://www.youtube.com/watch?v=IbyYUTBDVXQ" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/IbyYUTBDVXQ/maxresdefault.jpg" alt="JSON Schema Validation video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Writing</span>
+                                    <span class="badge badge-primary">Voiceover</span> 
+                                    <a href="https://www.youtube.com/watch?v=IbyYUTBDVXQ" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">  
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-users"></i> "Working With Your Team in Postman"
+                                </h5>
+                                <p class="card-text">Comprehensive guide to using Postman's built-in collaboration features to work effectively as a team.</p>
+                                <a href="https://www.youtube.com/watch?v=NwT062tYvzs" target="_blank" rel="noopener" class="video-card">
+                                    <div class="video-thumbnail-wrapper">
+                                        <img src="https://img.youtube.com/vi/NwT062tYvzs/maxresdefault.jpg" alt="Working With Your Team video thumbnail" class="video-thumbnail">
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mt-auto">
+                                    <span class="badge badge-primary">Script Writing</span>
+                                    <span class="badge badge-primary">On-Camera Presenting</span>
+                                    <a href="https://www.youtube.com/watch?v=NwT062tYvzs" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 by melinda gutermuth</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
