@@ -121,12 +121,11 @@
     <p class="mb-3">A collection of documentation, blog posts, video scripts, case studies, and publications spanning API education, developer tooling, and enterprise software.</p>
     <p class="mb-4">
       <a href="https://writing-portfolio.s3.us-east-2.amazonaws.com/Melinda+Gutermuth+-+Writing+Samples.pdf" target="_blank" class="btn btn-outline-primary mr-2">
-        <i class="fas fa-file-pdf mr-2"></i>Download Writing Samples PDF
+        <i class="fas fa-file-pdf mr-2"></i>Download Documentation Samples
       </a>
       <a href="https://writing-portfolio.s3.us-east-2.amazonaws.com/Resume-public.pdf" target="_blank" class="btn btn-outline-primary">
         <i class="fas fa-file-alt mr-2"></i>Download Resume
       </a>
-      <small class="text-muted ml-2 d-block mt-2">Writing samples include JSON Schema tutorial, PKS load balancers, and sidebar nav reorg</small>
     </p>
 
     <!-- Documentation -->  
@@ -165,11 +164,108 @@
     </div>
 
     <!-- Technical Blog Posts -->
-    <div class="work-section my-4">  
+    <div class="work-section my-4">
       <h3>Technical Blog Posts</h3>
       <div class="row">
+        <div class="col-md-12 d-flex align-items-stretch">
+          <div class="card mb-3 w-100">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <a href="https://www.youtube.com/watch?v=gr3SU_Ll00k" target="_blank" rel="noopener" class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                      <img src="https://img.youtube.com/vi/gr3SU_Ll00k/maxresdefault.jpg" alt="Postman January 2026 product update video" class="video-thumbnail">
+                      <div class="video-play-overlay">
+                        <i class="fas fa-play"></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title"><i class="fas fa-newspaper"></i> Postman Product Updates</h5>
+                  <p class="card-text">Monthly product update series written as a blog post and adapted into a video script.</p>
+                  <div class="mb-3">
+                    <span class="badge badge-primary">Product Writing</span>
+                    <span class="badge badge-primary">Developer Audience</span>
+                    <span class="badge badge-primary">Multi-format</span>
+                  </div>
+                  <a href="https://blog.postman.com/january-2026-product-updates/" class="btn btn-primary mr-2" target="_blank">Read Blog Post</a>
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#jan2026Script" aria-expanded="false">View Script</button>
+                </div>
+              </div>
+              <div class="collapse mt-3" id="jan2026Script">
+                <div style="border: 2px solid var(--border); padding: 20px; background: var(--light-bg); max-height: 420px; overflow-y: auto;">
+                  <p><strong>Performance testing upgrades</strong></p>
+                  <p>Traditional performance testing measures latency and throughput, but it doesn't tell you if your API is still behaving correctly under load. So, we've rebuilt the performance testing engine from the ground up. It now supports significantly higher load with predictable resource usage. And now you can run your existing pm.test() assertions using performance tests. Validate correctness and performance at the same time using the collections you already rely on for functional testing, so you can see exactly when and where behavior breaks as load increases.</p>
+                  <p>CI support for performance testing is also in open beta. This lets you run performance tests headlessly via the Postman CLI, so you can reuse tests as release gates. Catch concurrency bugs earlier and ship APIs that behave predictably under real-world traffic.</p>
+                  <p><strong>New Errors tab</strong></p>
+                  <p>Speaking of testing, when collection runs fail, the new Errors tab speeds up debugging. Test failures appear in Failures. Unexpected errors like network issues, timeouts, or script errors appear under Errors and they're grouped by request. Jump directly to the failing request and spend less time digging through logs.</p>
+                  <p><strong>Agent Mode integrations</strong></p>
+                  <p>Agent Mode also got some updates this month. You can now create GitHub issues and Jira issues via Agent Mode with context carried over automatically.</p>
+                  <p>Next up, better notifications for Slack and Microsoft Teams. You can now customize the frequency of Postman notifications in your Slack and Teams channels. Instead of getting every update, notifications now summarize new developments in your Postman workspaces. You can also customize your notifications by day of the week and time of day in a time zone you choose, so you can stay on top of API changes without overloading your channels with noise.</p>
+                  <p><strong>AI models and MCP server</strong></p>
+                  <p>Next, we're excited to introduce more flexibility with AI models. Experimenting with different models usually means switching platforms and managing separate API keys. We've redesigned AI requests to include a new provider selector and Bring Your Own Model support. Connect any OpenAI-compatible endpoint, whether it's a cloud provider, self-hosted deployment, or a local model on your machine. Test and compare models directly in Postman Collections without switching tools.</p>
+                  <p>And while we're talking about AI, Postman's MCP server now includes new ways to work with APIs. Connect Postman's MCP server to Claude Desktop, Cursor, VS Code, and other MCP-compatible coding agents. The MCP server can now generate idiomatic, well-organized code from your API definitions and test your APIs by running collections directly, so your AI assistants have more context about your APIs and can help you build faster.</p>
+                  <p><strong>Team Notebooks and workflow updates</strong></p>
+                  <p>Team Notebooks lets your team collaborate on creating interactive API documentation and they're now available to use directly in Postman. Plus, you can now save time by using Agent Mode to quickly create comprehensive Notebooks. Describe what you want to build and Agent Mode will assemble a structured Notebook with guidance, runnable requests, and code snippets.</p>
+                  <p>Good news for our Linux users: the Postman CLI now natively supports Linux ARM64. Run tests on ARM-based CI infrastructure without emulation for faster execution and smoother performance.</p>
+                  <p>A few more improvements this month: create Jira issues directly from monitor results, sort requests alphabetically inside collections, see console logs in collection run results, and control what syncs between specs and collections in Spec Hub.</p>
+                  <p>So that's what's new this month at Postman. Faster workflows, tighter integrations, and APIs that scale predictably. Give them a try and let us know what you think in the Postman community. And as always, keep it 200.</p>
+                </div>
+              </div>
+              <hr>
+              <button class="btn btn-sm btn-link px-0 text-muted" type="button" data-toggle="collapse" data-target="#seriesList" aria-expanded="false" style="font-size: 0.85em; text-decoration: none;">
+                <strong>More in this series</strong> <i class="fas fa-chevron-down ml-1" style="font-size: 0.75em;"></i>
+              </button>
+              <div class="collapse" id="seriesList">
+                <ul class="list-unstyled mb-0 mt-2">
+                  <li class="mb-1"><small>December 2025 &mdash; <a href="https://blog.postman.com/december-2025-product-updates/" target="_blank">Blog</a> &middot; <a href="https://www.youtube.com/watch?v=sMtKHw1TM7M" target="_blank">Video</a></small></li>
+                  <li class="mb-1"><small>November 2025 &mdash; <a href="https://blog.postman.com/november-2025-product-updates/" target="_blank">Blog</a> &middot; <a href="https://www.youtube.com/watch?v=eBpfudPN-XQ" target="_blank">Video</a></small></li>
+                  <li class="mb-1"><small>September 2025 &mdash; <a href="https://blog.postman.com/september-2025-product-updates/" target="_blank">Blog</a> &middot; <a href="https://www.youtube.com/watch?v=J6DOi4uwlSI" target="_blank">Video</a></small></li>
+                  <li class="mb-1"><small>August 2025 &mdash; <a href="https://blog.postman.com/postman-product-updates-august-2025/" target="_blank">Blog</a> &middot; <a href="https://www.youtube.com/watch?v=QWwL3lQe7Fc" target="_blank">Video</a></small></li>
+                  <li class="mb-1"><small>July 2025 &mdash; <a href="https://blog.postman.com/postman-product-updates-july-2025/" target="_blank">Blog</a> &middot; <a href="https://www.youtube.com/watch?v=VfxXojPBBzM" target="_blank">Video</a></small></li>
+                  <li class="mb-1"><small>June 2025 &mdash; <a href="https://blog.postman.com/postman-product-updates-june-2025/" target="_blank">Blog</a></small></li>
+                  <li class="mb-1"><small>March 2025 &mdash; <a href="https://blog.postman.com/postman-product-updates-march-2025/" target="_blank">Blog</a></small></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12 d-flex align-items-stretch">
+          <div class="card mb-4 w-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5 class="card-title"><i class="fas fa-users"></i> How Postman Uses Postman</h5>
+                  <p class="card-text">Interview series exploring how Postman employees across the organization use their own platform. I conducted and wrote interviews spanning data science, AI, design, testing, and monitoring.</p>
+                  <div class="mb-3">
+                    <span class="badge badge-primary">Interview Series</span>
+                    <span class="badge badge-primary">Storytelling</span>
+                    <span class="badge badge-primary">Developer Audience</span>
+                  </div>
+                  <a href="https://blog.postman.com/how-postman-uses-postman-bridging-the-gap-between-technology-data-science/" class="btn btn-primary mt-2" target="_blank">Read Featured Post</a>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-2"><strong>All posts in this series</strong></p>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-1"><a href="https://blog.postman.com/how-postman-uses-postman-bridging-the-gap-between-technology-data-science/" target="_blank">Bridging the Gap Between Technology and Data Science</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-postman-uses-postman-endpoint-monitoring-continuous-testing-and-api-first-design/" target="_blank">Endpoint Monitoring, Continuous Testing, and API-First Design</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-postman-uses-postman-feature-exploration-ai-flows/" target="_blank">Feature Exploration, AI, and Flows</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-postman-uses-postman-leveling-up-design-testing-collaboration/" target="_blank">Leveling Up Design, Testing, and Collaboration</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-postman-uses-postman-monitoring-and-performance-upgrades/" target="_blank">Monitoring and Performance Upgrades</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-postman-uses-postman-e2e-testing-collaboration/" target="_blank">E2E Testing and Collaboration</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
         <div class="col-md-6 d-flex align-items-stretch">
-          <div class="card mb-4 w-100">  
+          <div class="card mb-4 w-100">
             <div class="card-body">
               <h5 class="card-title"><i class="fas fa-file-code"></i> What is XML?</h5>
               <p class="card-text">Introduction to XML covering its fundamentals, benefits, challenges, and usage in Postman.</p>
@@ -199,58 +295,64 @@
       </div>
     </div>
 
-    <!-- Video Scripts Section -->
+    <!-- Event Recaps -->
     <div class="work-section my-4">
-        <h3>Video Scripts</h3>
-        <p>Script development for technical product marketing and education:</p>
-        <div class="row">
-            <div class="col-md-6 d-flex align-items-stretch">
-                <div class="card mb-4 w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-video"></i> Postman Product Updates
-                        </h5>
-                        <p class="card-text">Monthly product update video highlighting new features and improvements in Postman.</p>
-                        <a href="https://www.youtube.com/watch?v=sMtKHw1TM7M" target="_blank" rel="noopener" class="video-card">
-                            <div class="video-thumbnail-wrapper">
-                                <img src="https://img.youtube.com/vi/sMtKHw1TM7M/maxresdefault.jpg" alt="Postman Product Updates video thumbnail" class="video-thumbnail">
-                                <div class="video-play-overlay">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="mt-auto">
-                            <span class="badge badge-primary">Script Writing</span>
-                            <span class="badge badge-primary">Product Marketing</span>
-                            <a href="https://www.youtube.com/watch?v=sMtKHw1TM7M" target="_blank" rel="noopener" class="btn btn-primary watch-button">Watch on YouTube →</a>
-                        </div>
-                    </div>
+      <h3>Event Recaps</h3>
+      <div class="row">
+        <div class="col-md-12 d-flex align-items-stretch">
+          <div class="card mb-4 w-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5 class="card-title"><i class="fas fa-microphone"></i> POST/CON Keynote Coverage</h5>
+                  <p class="card-text">Three-part series recapping Postman's 2025 conference keynote, translating live announcements into in-depth editorial content on API development workflows, distribution, and AI orchestration.</p>
+                  <div class="mb-3">
+                    <span class="badge badge-primary">Conference Coverage</span>
+                    <span class="badge badge-primary">API Platform</span>
+                    <span class="badge badge-primary">Series</span>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-stretch">
-                <div class="card mb-4 w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-robot"></i> Agentic AI Video Series
-                        </h5>
-                        <p class="card-text">A six-part video series explaining agentic AI concepts and applications for enterprise audiences.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLM-7VG-sgbtDsadpDngJztwK5_9wPij_-" target="_blank" rel="noopener" class="video-card">
-                            <div class="video-thumbnail-wrapper">
-                                <img src="https://img.youtube.com/vi/lYixWuCoGBw/maxresdefault.jpg" alt="Agentic AI Series thumbnail" class="video-thumbnail">
-                                <div class="video-play-overlay">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="mt-auto">
-                            <span class="badge badge-primary">Script Writing</span>
-                            <span class="badge badge-primary">Technical Content</span>
-                            <a href="https://www.youtube.com/playlist?list=PLM-7VG-sgbtDsadpDngJztwK5_9wPij_-" class="btn btn-primary watch-button">View Playlist →</a>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                  <p class="mb-2"><strong>Keynote recap series</strong></p>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-1"><a href="https://blog.postman.com/how-to-streamline-api-development-workflow/" target="_blank">Level 1, the Fragmented Workflow</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-to-solve-api-distribution-disconnect/" target="_blank">Level 2, the Distribution Disconnect</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-to-orchestrate-apis-for-ai-workflows/" target="_blank">Level 3, the Orchestration Crisis</a></li>
+                  </ul>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12 d-flex align-items-stretch">
+          <div class="card mb-4 w-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5 class="card-title"><i class="fas fa-calendar-alt"></i> API Specifications Conference 2022</h5>
+                  <p class="card-text">Session recaps from the API Specifications Conference, covering OpenAPI, GraphQL security, contract testing, open data, and JSON Schema in production.</p>
+                  <div class="mb-3">
+                    <span class="badge badge-primary">Conference Coverage</span>
+                    <span class="badge badge-primary">API Standards</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-2"><strong>Session recaps</strong></p>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-1"><a href="https://blog.postman.com/openapi-does-what-swagger-dont/" target="_blank">OpenAPI Does What Swagger Don't</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/how-to-build-secure-graphql-apis/" target="_blank">How to Build Secure GraphQL APIs</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/api-contract-testing-4-things-to-validate/" target="_blank">API Contract Testing: 4 Things to Validate</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/open-data-apis-standards-best-practices-challenges/" target="_blank">Open Data APIs: Standards, Best Practices, and Challenges</a></li>
+                    <li class="mb-1"><a href="https://blog.postman.com/json-schema-in-production-how-you-can-use-it-today/" target="_blank">JSON Schema in Production: How You Can Use It Today</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Case Studies -->
@@ -265,27 +367,10 @@
                             <i class="fas fa-robot"></i> 6 River Systems: Warehouse Automation with JSON Schema
                         </h5>
                         <p class="card-text">An in-depth exploration of how 6 River Systems leverages JSON Schema to streamline warehouse robotics operations and enhance data validation processes.</p>
-                        <div class="implementation-details mb-3">
-                            <h6>Key Implementation Areas:</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check"></i> Robot configuration validation</li>
-                                <li><i class="fas fa-check"></i> Automated testing processes</li>
-                                <li><i class="fas fa-check"></i> Development workflow optimization</li>
-                            </ul>
-                        </div>
-                        <div class="results mb-3">
-                            <h6>Impact:</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-chart-line"></i> Improved development velocity</li>
-                                <li><i class="fas fa-bug-slash"></i> Reduced configuration errors</li>
-                                <li><i class="fas fa-clock"></i> Faster deployment cycles</li>
-                            </ul>
-                        </div>
                         <div class="mt-auto">
                             <span class="badge badge-primary">JSON Schema</span>
                             <span class="badge badge-primary">Automation</span>
                             <span class="badge badge-primary">Robotics</span>
-                            <span class="badge badge-primary">Case Study</span>
                         </div>
                         <a href="https://json-schema.org/blog/posts/6-river-systems-case-study" class="btn btn-primary mt-3" target="_blank">Read Case Study</a>
                     </div>
@@ -300,55 +385,16 @@
                             <i class="fas fa-cloud"></i> Salesforce: Scaling API Sharing for Developer Success
                         </h5>
                         <p class="card-text">Analysis of Salesforce's approach to sharing APIs at scale while maintaining an excellent developer experience through their public workspace strategy.</p>
-                        <div class="implementation-details mb-3">
-                            <h6>Key Strategies:</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check"></i> Public workspace organization</li>
-                                <li><i class="fas fa-check"></i> Collection documentation standards</li>
-                                <li><i class="fas fa-check"></i> Developer onboarding optimization</li>
-                            </ul>
-                        </div>
-                        <div class="results mb-3">
-                            <h6>Impact:</h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-users"></i> Enhanced developer adoption</li>
-                                <li><i class="fas fa-code"></i> Streamlined API discovery</li>
-                                <li><i class="fas fa-rocket"></i> Accelerated integration times</li>
-                            </ul>
-                        </div>
                         <div class="mt-auto">
                             <span class="badge badge-primary">API Management</span>
                             <span class="badge badge-primary">Developer Experience</span>
                             <span class="badge badge-primary">Scaling</span>
-                            <span class="badge badge-primary">Case Study</span>
                         </div>
                         <a href="https://blog.postman.com/how-salesforce-shares-apis-at-scale-great-developer-experience/" class="btn btn-primary mt-3" target="_blank">Read Case Study</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Documentation Microsites -->
-    <div class="work-section my-4">  
-      <h3>Documentation Microsites</h3>
-      <div class="row">
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="card mb-4 w-100">  
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-folder-open"></i> Collection Format</h5>
-              <p class="card-text">Collaborated on a comprehensive documentation microsite for Postman's Collection format, including an overview, schema, examples, and FAQs.</p>
-              <div class="mt-auto">  
-                <span class="badge badge-primary">Collections</span>
-                <span class="badge badge-primary">APIs</span>
-                <span class="badge badge-primary">JSON</span>
-                <span class="badge badge-primary">Postman</span>
-              </div>
-              <a href="https://web.archive.org/web/20260113002516/https://learning.postman.com/collection-format/getting-started/overview/" class="btn btn-primary mt-3" target="_blank">Read Documentation</a>
-            </div>
-          </div>  
-        </div>
-      </div>
     </div>
 
     <!-- Print Publications -->
@@ -384,17 +430,6 @@
         </div>
     </div>
     
-    <!-- Additional Samples -->
-    <div class="work-section my-4">
-      <h3>Additional Samples</h3>
-      <ul>
-        <li><i class="fas fa-file-alt"></i> <a href="https://blog.postman.com/api-design-interview-questions/">API Design Interview Questions</a> - Answers to common API design interview questions</li>
-        <li><i class="fas fa-file-alt"></i> <a href="https://blog.postman.com/graphql-interview-questions/">GraphQL Interview Questions</a> - Common GraphQL interview questions and answers</li>
-        <li><i class="fas fa-file-alt"></i> <a href="https://blog.postman.com/understanding-asynchronous-apis/">Understanding asynchronous APIs</a> - Explains asynchronous and synchronous APIs, use cases, and examples</li>
-        <li><i class="fas fa-file-alt"></i> API Collaboration ebook - Best practices, challenges, and case studies (available upon request)</li>
-      </ul>
-    </div>
-  
   </div>
 </section>
 
