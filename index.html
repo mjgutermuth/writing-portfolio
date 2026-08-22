@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
                 <div class="text-left">
                     <h1 class="navbar-brand mb-0">melinda gutermuth</h1>
@@ -31,16 +31,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portfolio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                                <a class="dropdown-item" href="writing.html">Technical Writing</a>
-                                <a class="dropdown-item" href="video.html">Video</a>
-                            </div>
-                        </li>
+                        <li class="nav-item"><a class="nav-link current" href="index.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -49,8 +42,26 @@
     </header>
 
     <main>
-        <div id="about" class="container my-5">
-            <h2>About</h2>
+        <div class="hero-scene" id="about">
+            <div class="hero-star" style="left:12%; top:20%;"></div>
+            <div class="hero-star" style="left:20%; top:45%; background:#00e5ff; box-shadow:0 0 4px rgba(0,229,255,.8);"></div>
+            <div class="hero-star" style="left:82%; top:18%;"></div>
+            <div class="hero-star" style="left:88%; top:42%; background:#ff2e88; box-shadow:0 0 4px rgba(255,46,136,.8);"></div>
+            <div class="hero-star" style="left:8%; top:60%; width:2px; height:2px;"></div>
+            <div class="hero-star" style="left:92%; top:62%; width:2px; height:2px;"></div>
+            <svg class="hero-tri" style="left:5%; top:6%; opacity:.45;" width="50" height="44" viewBox="0 0 92 80" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linejoin="round"><polygon points="46,4 88,76 4,76"></polygon></svg>
+            <svg class="hero-tri" style="right:9%; top:12%; transform:rotate(180deg);" width="13" height="11" viewBox="0 0 24 21"><polygon points="12,1 23,20 1,20" fill="#ffffff"></polygon></svg>
+            <svg class="hero-tri" style="left:15%; top:58%; transform:rotate(180deg);" width="8" height="7" viewBox="0 0 14 12"><polygon points="7,1 13,11 1,11" fill="#9b5cff"></polygon></svg>
+            <svg class="hero-tri" style="right:13%; top:52%; opacity:.55;" width="26" height="23" viewBox="0 0 48 42" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"><polygon points="24,3 45,38 3,38"></polygon></svg>
+            <div class="sun-wrap">
+                <div class="sun-ring"></div>
+                <div class="sun"><div class="sun-fill"></div><div class="sun-stripes"></div></div>
+            </div>
+            <div class="grid-floor"></div>
+            <h2 class="hero-title">About</h2>
+        </div>
+
+        <div class="container my-5">
             <p>I started in systems administration, but kept gravitating toward the documentation work. I wrote runbooks, guides, and technical training that helped people understand how systems worked together. Eventually, I made it official and became a technical writer.</p>
             <p>After five years writing customer-facing docs for a cloud platform, I moved into developer relations. Making video tutorials led to voiceover training, and what started as a way to improve on camera became a second career. I've been working as a professional voice actor ever since.</p>
             <p>More recently, I've been leveraging that scripting, presenting, and delivery experience to build <a href="https://humanreadable.media" target="_blank">Human Readable Media</a>, where I offer technical video production for developer tools companies.</p>
@@ -62,54 +73,60 @@
             <h2>What I Do</h2>
             <div class="row">
                 <div class="col-6 col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 card-accent" style="--accent:#00e5ff; --accent-glow:rgba(0,229,255,.18);">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-film"></i>Technical Video</h5>
+                            <div class="icon-badge"><i class="fas fa-film"></i></div>
+                            <h5 class="card-title">Technical Video</h5>
                             <p class="card-text">Tutorials, demos, and explainers for developer tools.</p>
                             <a href="https://humanreadable.media" target="_blank" class="btn btn-primary btn-sm mt-3">Visit Site ↗</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 card-accent" style="--accent:#ff2e88; --accent-glow:rgba(255,46,136,.18);">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-pen"></i>Technical Writing</h5>
+                            <div class="icon-badge"><i class="fas fa-pen"></i></div>
+                            <h5 class="card-title">Technical Writing</h5>
                             <p class="card-text">Documentation, guides, and long-form content for technical audiences.</p>
                             <a href="writing.html" class="btn btn-primary btn-sm mt-3">View Portfolio ↗</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 card-accent" style="--accent:#9b5cff; --accent-glow:rgba(155,92,255,.18);">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-microphone"></i>Voiceover</h5>
+                            <div class="icon-badge"><i class="fas fa-microphone"></i></div>
+                            <h5 class="card-title">Voiceover</h5>
                             <p class="card-text">Professional voiceover for tech, corporate, e-learning, and more.</p>
                             <a href="https://voice.melindagutermuth.com/" target="_blank" class="btn btn-primary btn-sm mt-3">Visit Site ↗</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 card-accent" style="--accent:#00e5ff; --accent-glow:rgba(0,229,255,.18);">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-map-marked-alt"></i>Travel Advising</h5>
+                            <div class="icon-badge"><i class="fas fa-map-marked-alt"></i></div>
+                            <h5 class="card-title">Travel Advising</h5>
                             <p class="card-text">Travel planning, specializing in cruises and city adventures.</p>
                             <a href="https://wanderling.world/" target="_blank" class="btn btn-primary btn-sm mt-3">Visit Site ↗</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 card-accent" style="--accent:#ff2e88; --accent-glow:rgba(255,46,136,.18);">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-laptop-code"></i>Apps</h5>
+                            <div class="icon-badge"><i class="fas fa-laptop-code"></i></div>
+                            <h5 class="card-title">Apps</h5>
                             <p class="card-text">Side projects, experiments, and silly little tools I've built.</p>
                             <a href="https://melimuth.fun" target="_blank" class="btn btn-primary btn-sm mt-3">Visit Site ↗</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 card-accent" style="--accent:#9b5cff; --accent-glow:rgba(155,92,255,.18);">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-globe"></i>YouTube</h5>
+                            <div class="icon-badge"><i class="fas fa-globe"></i></div>
+                            <h5 class="card-title">YouTube</h5>
                             <p class="card-text">Exploring the linguistic features of the places I travel to.</p>
                             <a href="https://www.youtube.com/@wanderling-world" target="_blank" class="btn btn-primary btn-sm mt-3">Watch Now ↗</a>
                         </div>
@@ -119,12 +136,11 @@
         </div>
     </main>
 
-    <footer class="bg-primary text-white text-center py-3">
+    <footer>
         <p>&copy; 2026 by melinda gutermuth</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

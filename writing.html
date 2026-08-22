@@ -55,7 +55,7 @@
             transform: translate(-50%, -50%);
             width: 80px;
             height: 80px;
-            background: rgba(32, 178, 170, 0.9);
+            background: rgba(255, 46, 136, 0.85);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -64,7 +64,7 @@
         }
 
         .video-card:hover .video-play-overlay {
-            background: rgba(32, 178, 170, 1);
+            background: rgba(255, 46, 136, 1);
             transform: translate(-50%, -50%) scale(1.1);
         }
 
@@ -95,12 +95,12 @@
     </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
                 <div class="text-left">
                     <h1 class="navbar-brand mb-0">melinda gutermuth</h1>
-                    <h6 class="tagline">technical writer & storyteller</h6>
+                    <h6 class="tagline">writer · producer · voice artist</h6>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -108,15 +108,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portfolio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                                <a class="dropdown-item" href="writing.html">Technical Writing</a>
-                                <a class="dropdown-item" href="video.html">Video</a>
-                            </div>
-                        </li>
+                        <li class="nav-item"><a class="nav-link current" href="writing.html">Writing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -203,7 +196,7 @@
                 </div>
               </div>
               <div class="collapse mt-3" id="jan2026Script">
-                <div style="border: 2px solid var(--border); padding: 20px; background: var(--light-bg); max-height: 420px; overflow-y: auto;">
+                <div style="border: 2px solid var(--border); padding: 20px; background: var(--bg-panel); max-height: 420px; overflow-y: auto;">
                   <p><strong>Performance testing upgrades</strong></p>
                   <p>Traditional performance testing measures latency and throughput, but it doesn't tell you if your API is still behaving correctly under load. So, we've rebuilt the performance testing engine from the ground up. It now supports significantly higher load with predictable resource usage. And now you can run your existing pm.test() assertions using performance tests. Validate correctness and performance at the same time using the collections you already rely on for functional testing, so you can see exactly when and where behavior breaks as load increases.</p>
                   <p>CI support for performance testing is also in open beta. This lets you run performance tests headlessly via the Postman CLI, so you can reuse tests as release gates. Catch concurrency bugs earlier and ship APIs that behave predictably under real-world traffic.</p>
@@ -442,12 +435,11 @@
   </div>
 </section>
 
-    <footer class="bg-primary text-white text-center py-3">
+    <footer>
         <p>&copy; 2026 by melinda gutermuth</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

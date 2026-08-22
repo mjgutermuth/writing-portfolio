@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
                 <div class="text-left">
                     <h1 class="navbar-brand mb-0">melinda gutermuth</h1>
-                    <h6 class="tagline">technical writer & storyteller</h6>
+                    <h6 class="tagline">writer · producer · voice artist</h6>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,16 +32,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portfolio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                                <a class="dropdown-item" href="writing.html">Technical Writing</a>
-                                <a class="dropdown-item" href="video.html">Video</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                        <li class="nav-item"><a class="nav-link current" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,12 +70,11 @@
         </section>
     </main>
 
-    <footer class="bg-primary text-white text-center py-3">
+    <footer>
         <p>&copy; 2026 by melinda gutermuth</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         document.getElementById('contactForm').addEventListener('submit', async function(e) {
