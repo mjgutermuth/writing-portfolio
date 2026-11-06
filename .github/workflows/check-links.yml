@@ -1,0 +1,30 @@
+name: Check links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Mondays at 14:00 UTC, to catch external pages that disappear between pushes
+    - cron: "0 14 * * 1"
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 3
+            --timeout 30
+            --accept 200..=299,429
+            --user-agent "Mozilla/5.0 (compatible; link-checker)"
+            --exclude "^https://api\.web3forms\.com/"
+            --exclude "^https://unsplash\.com/"
+            './**/*.html'
+          fail: true
